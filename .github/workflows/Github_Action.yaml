@@ -1,7 +1,5 @@
 name: Tweeting from Gtihub Actions
-​
 on: push
-​
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +12,4 @@ jobs:
           api_key_secret: ${{ secrets.TWITTER_API_KEY_SECRET }}
           access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
           access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
-        
-outputs:
-  title:
-    description: "Post's title"        
+     
