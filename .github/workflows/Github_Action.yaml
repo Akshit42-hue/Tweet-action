@@ -1,0 +1,16 @@
+name: Tweeting from Gtihub Actions
+​
+on: push
+​
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: AKshit123/tweet-action@v1.0.1
+        with:
+          status: "Hello, delivered from Github Actions 🚀"
+          api_key: ${{ secrets.TWITTER_API_KEY }}
+          api_key_secret: ${{ secrets.TWITTER_API_KEY_SECRET }}
+          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
