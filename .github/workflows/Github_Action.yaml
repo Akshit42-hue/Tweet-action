@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: AKshit123/tweet-action@v1.0.1
+      - uses: Akshit42-hue/Tweet-action@v1.0.1
         with:
           status: "Hello, delivered from Github Actions 🚀"
           api_key: ${{ secrets.TWITTER_API_KEY }}
