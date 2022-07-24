@@ -8,7 +8,7 @@ jobs:
       - uses: Akshit42-hue/Tweet-action@main
         with:
           status: "Hello, delivered from Github Actions 🚀"
-          api_key: ${{ secrets.TWITTER_API_KEY }}
-          api_key_secret: ${{ secrets.TWITTER_API_KEY_SECRET }}
-          access_token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-          access_token_secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+          api_key: ${{ secret.TWITTER_API_KEY }}
+          api_key_secret: ${{ secret.TWITTER_API_KEY_SECRET }}
+          access_token: ${{ secret.TWITTER_ACCESS_TOKEN }}
+          access_token_secret: ${{ secret.TWITTER_ACCESS_TOKEN_SECRET }}
